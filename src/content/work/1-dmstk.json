@@ -1,0 +1,19 @@
+{
+  "title": "DMSTK",
+  "description": "DMSTK is a motion design studio based in Paris. I worked with them on several projects, including the creation of their website.",
+  "cover": {
+    "type": "VIDEO",
+    "sources": [
+      { "src": "/work/dmstk/DMSTK_collage_h265.mp4" },
+      { "src": "/work/dmstk/DMSTK_collage_h264.mp4" }
+    ]
+  },
+  "media": [],
+  "tags": [
+    "Motion Graphics",
+    "Creative Direction",
+    "Video Production",
+    "Adobe After Effects",
+    "Adobe Photoshop"
+  ]
+}

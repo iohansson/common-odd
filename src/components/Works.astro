@@ -1,0 +1,21 @@
+---
+import { getCollection } from "astro:content";
+import Work from "./Work.svelte";
+import clsx from "clsx";
+
+const allWorks = await getCollection("work");
+---
+
+{
+  allWorks.map((work, i) => (
+    <Work
+      work={work.data}
+      client:visible
+      styleClass={clsx(
+        i % 2 == 0 ? "ml-auto" : "mr-auto",
+        "p-4 md:px-0 md:w-3/4 xl:w-1/2"
+      )}
+      alignment={i % 2 == 0 ? "right" : "left"}
+    />
+  ))
+}

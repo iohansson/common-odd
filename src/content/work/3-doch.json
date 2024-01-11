@@ -1,0 +1,14 @@
+{
+  "title": "Doch konditera",
+  "description": "",
+  "cover": {
+    "type": "IMAGE",
+    "sources": [
+      { "src": "/work/doch/macarons.avif", "type": "image/avif" },
+      { "src": "/work/doch/macarons.webp", "type": "image/webp" },
+      { "src": "/work/doch/macarons.jpg", "type": "image/jpeg" }
+    ]
+  },
+  "media": [],
+  "tags": ["Photography", "Creative Direction", "Adobe Photoshop"]
+}

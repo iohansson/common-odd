@@ -1,0 +1,10 @@
+{
+  "title": "ALAP",
+  "description": "ALAP is a product that helps people to learn how to play the piano. It is a combination of a piano and a tablet. The tablet is connected to the piano and it shows the notes that the user should play.",
+  "cover": {
+    "type": "VIDEO",
+    "sources": [{ "src": "/work/alap/ALAP_h265.mp4" }]
+  },
+  "media": [],
+  "tags": ["Photography", "Creative Direction"]
+}

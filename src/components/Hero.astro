@@ -1,0 +1,27 @@
+---
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<div class="p-8 max-w-prose">
+  <h1 class="leading-none font-black text-6xl text-shuffle opacity-0">
+    {title}
+  </h1>
+</div>
+
+<script>
+  // import {makeShuffle} from '../lib/textShuffle';
+
+  const toShuffle = document.querySelector<HTMLElement>(".text-shuffle");
+
+  // if (toShuffle) {
+  //   makeShuffle({el: toShuffle, colors: ['#212529', '#495057', '#adb5bd'], lineDelay: 60})?.();
+  // }
+
+  setTimeout(() => {
+    toShuffle?.classList.remove("opacity-0");
+  }, 0);
+</script>

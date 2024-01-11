@@ -1,0 +1,23 @@
+---
+import '../styles/global.css';
+
+interface Props {
+	title?: string | undefined;
+	description?: string | undefined;
+}
+
+const {
+	title = 'Irina Grigoreva: Portfolio Site',
+	description = 'The portfolio site of Irina Grigoreva',
+} = Astro.props;
+---
+
+<meta charset="UTF-8" />
+<meta name="description" property="og:description" content={description} />
+<meta name="viewport" content="width=device-width" />
+<meta name="generator" content={Astro.generator} />
+<title>{title}</title>
+
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

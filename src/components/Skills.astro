@@ -1,0 +1,51 @@
+---
+const allSkills = {
+  "Layout & Composition": [
+    "Adobe InDesign",
+    "Figma",
+    "Adobe Illustrator",
+    "Adobe Photoshop",
+    "Procreate",
+  ],
+  Photography: ["Adobe Lightroom", "Capture One"],
+  "Motion Graphics & Video": ["Adobe Premiere Pro", "Adobe After Effects"],
+  "3D Modeling / Prototyping": ["Spline", "Shapr3D", "Nomad"],
+  "3D Printing": ["IdeaMaker", "Ultimaker Cura", "Pronterface"],
+  "Collaboration and Ideation": [
+    "Miro",
+    "FigJam",
+    "Mural",
+    "Notion",
+    "Obsidian",
+    "Slack",
+    "Discord",
+  ],
+  "Coding and Data": ["PyCharm", "Tableau"],
+  Experience: [
+    "Creative Direction",
+    "Print layout Design",
+    "Technical and creative retouching",
+    "Product, food, and landscape photography",
+    "Set Design",
+    "Video Production",
+    "Prepress",
+  ],
+};
+---
+
+<div
+  class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 p-4 gap-8"
+>
+  {
+    Object.entries(allSkills).map(([category, skills], i) => (
+      <div>
+        <h3 class="text-2xl font-bold pb-2">{category}</h3>
+        <ul class="">
+          {skills.map((skill, i) => (
+            <li>{skill}</li>
+          ))}
+        </ul>
+      </div>
+    ))
+  }
+</div>
